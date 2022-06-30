@@ -1,4 +1,4 @@
-baseurl: http://willjarrard.com/
+baseurl: https://willjarrard.netlify.app/
 DefaultContentLanguage: en
 title: Will Jarrard
 theme: beautifulhugo
