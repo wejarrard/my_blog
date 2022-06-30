@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>scikit-learn on Will Jarrard</title>
-    <link>https://wejarrard.github.io/my_blog/tags/scikit-learn/</link>
+    <link>https://chimerical-piroshki-64f694.netlify.app/tags/scikit-learn/</link>
     <description>Recent content in scikit-learn on Will Jarrard</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>wej5ar@virginia.edu (Will Jarrard)</managingEditor>
     <webMaster>wej5ar@virginia.edu (Will Jarrard)</webMaster>
-    <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wejarrard.github.io/my_blog/tags/scikit-learn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chimerical-piroshki-64f694.netlify.app/tags/scikit-learn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Classifying Songs with NLP</title>
-      <link>https://wejarrard.github.io/my_blog/post/2022-06-29-classifying-songs-with-nlp/</link>
+      <link>https://chimerical-piroshki-64f694.netlify.app/post/2022-06-29-classifying-songs-with-nlp/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       <author>wej5ar@virginia.edu (Will Jarrard)</author>
-      <guid>https://wejarrard.github.io/my_blog/post/2022-06-29-classifying-songs-with-nlp/</guid>
+      <guid>https://chimerical-piroshki-64f694.netlify.app/post/2022-06-29-classifying-songs-with-nlp/</guid>
       <description>Github and code can be found here.
 Problem Statement Music genres organize music into collections by indicating similarities between different songs. Many music streaming services such as Spotify have high incentives to automate the classification process since they have an estimated 60,000 new songs uploaded onto their site daily. Currently, many music streaming services leverage metadata such as acoustics and emotional tone for genre classification because audio files are more useful than lyrics in terms of classifying a song, due to the high dimensionality of the audio files and low dimensionality of the lyrics.</description>
     </item>

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Will Jarrard</title>
-    <link>https://wejarrard.github.io/my_blog/categories/</link>
+    <link>https://chimerical-piroshki-64f694.netlify.app/categories/</link>
     <description>Recent content in Categories on Will Jarrard</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>wej5ar@virginia.edu (Will Jarrard)</managingEditor>
-    <webMaster>wej5ar@virginia.edu (Will Jarrard)</webMaster><atom:link href="https://wejarrard.github.io/my_blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <webMaster>wej5ar@virginia.edu (Will Jarrard)</webMaster><atom:link href="https://chimerical-piroshki-64f694.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

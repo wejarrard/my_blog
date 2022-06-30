@@ -2,63 +2,63 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Will Jarrard</title>
-    <link>https://wejarrard.github.io/my_blog/tags/</link>
+    <link>https://chimerical-piroshki-64f694.netlify.app/tags/</link>
     <description>Recent content in Tags on Will Jarrard</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>wej5ar@virginia.edu (Will Jarrard)</managingEditor>
     <webMaster>wej5ar@virginia.edu (Will Jarrard)</webMaster>
-    <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wejarrard.github.io/my_blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chimerical-piroshki-64f694.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pyspark</title>
-      <link>https://wejarrard.github.io/my_blog/tags/pyspark/</link>
+      <link>https://chimerical-piroshki-64f694.netlify.app/tags/pyspark/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       <author>wej5ar@virginia.edu (Will Jarrard)</author>
-      <guid>https://wejarrard.github.io/my_blog/tags/pyspark/</guid>
+      <guid>https://chimerical-piroshki-64f694.netlify.app/tags/pyspark/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>https://wejarrard.github.io/my_blog/tags/python/</link>
+      <link>https://chimerical-piroshki-64f694.netlify.app/tags/python/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       <author>wej5ar@virginia.edu (Will Jarrard)</author>
-      <guid>https://wejarrard.github.io/my_blog/tags/python/</guid>
+      <guid>https://chimerical-piroshki-64f694.netlify.app/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>r</title>
-      <link>https://wejarrard.github.io/my_blog/tags/r/</link>
+      <link>https://chimerical-piroshki-64f694.netlify.app/tags/r/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       <author>wej5ar@virginia.edu (Will Jarrard)</author>
-      <guid>https://wejarrard.github.io/my_blog/tags/r/</guid>
+      <guid>https://chimerical-piroshki-64f694.netlify.app/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>scikit-learn</title>
-      <link>https://wejarrard.github.io/my_blog/tags/scikit-learn/</link>
+      <link>https://chimerical-piroshki-64f694.netlify.app/tags/scikit-learn/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       <author>wej5ar@virginia.edu (Will Jarrard)</author>
-      <guid>https://wejarrard.github.io/my_blog/tags/scikit-learn/</guid>
+      <guid>https://chimerical-piroshki-64f694.netlify.app/tags/scikit-learn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tensorflow</title>
-      <link>https://wejarrard.github.io/my_blog/tags/tensorflow/</link>
+      <link>https://chimerical-piroshki-64f694.netlify.app/tags/tensorflow/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       <author>wej5ar@virginia.edu (Will Jarrard)</author>
-      <guid>https://wejarrard.github.io/my_blog/tags/tensorflow/</guid>
+      <guid>https://chimerical-piroshki-64f694.netlify.app/tags/tensorflow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tidyverse</title>
-      <link>https://wejarrard.github.io/my_blog/tags/tidyverse/</link>
+      <link>https://chimerical-piroshki-64f694.netlify.app/tags/tidyverse/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       <author>wej5ar@virginia.edu (Will Jarrard)</author>
-      <guid>https://wejarrard.github.io/my_blog/tags/tidyverse/</guid>
+      <guid>https://chimerical-piroshki-64f694.netlify.app/tags/tidyverse/</guid>
       <description></description>
     </item>
     

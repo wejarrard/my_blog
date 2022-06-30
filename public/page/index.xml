@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Will Jarrard</title>
-    <link>https://wejarrard.github.io/my_blog/page/</link>
+    <link>https://chimerical-piroshki-64f694.netlify.app/page/</link>
     <description>Recent content in Pages on Will Jarrard</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>wej5ar@virginia.edu (Will Jarrard)</managingEditor>
-    <webMaster>wej5ar@virginia.edu (Will Jarrard)</webMaster><atom:link href="https://wejarrard.github.io/my_blog/page/index.xml" rel="self" type="application/rss+xml" />
+    <webMaster>wej5ar@virginia.edu (Will Jarrard)</webMaster><atom:link href="https://chimerical-piroshki-64f694.netlify.app/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About me</title>
-      <link>https://wejarrard.github.io/my_blog/page/about/</link>
+      <link>https://chimerical-piroshki-64f694.netlify.app/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>wej5ar@virginia.edu (Will Jarrard)</author>
-      <guid>https://wejarrard.github.io/my_blog/page/about/</guid>
+      <guid>https://chimerical-piroshki-64f694.netlify.app/page/about/</guid>
       <description>I just received a masters in data science seeking a full-time position in data science or machine learning engineering. I am experienced contributor in the biotech industry working on infrastructure projects and predictive models such as a two year project of helping a hospital in Rwanda digitize their medical records. I have experience in statistical analysis, machine learning and deep learning with tools including Pandas/Spark/Pytorch/Tensorflow in Python, tidyverse in R, and SQL.</description>
     </item>
     
     <item>
       <title>Python Projects</title>
-      <link>https://wejarrard.github.io/my_blog/page/pythonprojects/</link>
+      <link>https://chimerical-piroshki-64f694.netlify.app/page/pythonprojects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>wej5ar@virginia.edu (Will Jarrard)</author>
-      <guid>https://wejarrard.github.io/my_blog/page/pythonprojects/</guid>
+      <guid>https://chimerical-piroshki-64f694.netlify.app/page/pythonprojects/</guid>
       <description>Classifying songs with NLP Web scraped song lyrics to predict songs genres utilizing statistical learning methods such as multinomial logistic regression, naive bayes and linear SVC. Also utilized newer deep learning NLP methods such as GRU’s, CNN’s, basic transformers, and BERT.
 Clothes Recommendation System Using Collaborative Filtering Created a recommendation system in PySpark using ALS modeling to recommend clothes a person is likely to buy next.</description>
     </item>
     
     <item>
       <title>R Projects</title>
-      <link>https://wejarrard.github.io/my_blog/page/rprojects/</link>
+      <link>https://chimerical-piroshki-64f694.netlify.app/page/rprojects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>wej5ar@virginia.edu (Will Jarrard)</author>
-      <guid>https://wejarrard.github.io/my_blog/page/rprojects/</guid>
+      <guid>https://chimerical-piroshki-64f694.netlify.app/page/rprojects/</guid>
       <description>A Dive into Resampling A look at the power of bootstrapping and K-fold cross validation.</description>
     </item>
     
