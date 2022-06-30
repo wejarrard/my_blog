@@ -20,6 +20,17 @@ Abstract Businesses and retailers are constantly faced with the challenge of pre
     </item>
     
     <item>
+      <title>A Dive into Resampling</title>
+      <link>https://wejarrard.github.io/my_blog/post/2022-06-29-resampling/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      <author>wej5ar@virginia.edu (Will Jarrard)</author>
+      <guid>https://wejarrard.github.io/my_blog/post/2022-06-29-resampling/</guid>
+      <description>Required R packages and Directories library(tidyverse) # functions for data manipulation library(FNN) The Poor mans bayesian posterior (Bootstrapping) Ive always found it cool how bootstrapping can estimate a bayesian posterior solution without any priors. Bootstrap resampling can be used to quantify the uncertainty in a fitted curve. Below we see the power of bootstrapping.
+First, lets create a set of functions to generate data from the following distributions:
+#-- Simulation functions sim_x &amp;lt;- function(n) runif(n, 0, 2) # U[0,2] f &amp;lt;- function(x) 1 + 2*x + 5*sin(5*x) # true mean function sim_y &amp;lt;- function(x){ # generate Y|X from N{f(x),sd} n = length(x) f(x) + rnorm(n, sd=2.</description>
+    </item>
+    
+    <item>
       <title>Classifying Songs with NLP</title>
       <link>https://wejarrard.github.io/my_blog/post/2022-06-29-classifying-songs-with-nlp/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
@@ -30,12 +41,30 @@ Problem Statement Music genres organize music into collections by indicating sim
     </item>
     
     <item>
-      <title>Resampling</title>
-      <link>https://wejarrard.github.io/my_blog/post/2022-06-29-resampling/</link>
+      <title>Handwritten Text and Digit Classification on Rwandan Perioperative Flowsheets</title>
+      <link>https://wejarrard.github.io/my_blog/post/2022-06-29-handwritten-text-and-digit-classification-on-rwandan-perioperative-flowsheets/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       <author>wej5ar@virginia.edu (Will Jarrard)</author>
-      <guid>https://wejarrard.github.io/my_blog/post/2022-06-29-resampling/</guid>
-      <description> Required R packages and Directories data.dir = &amp;#39;https://mdporter.github.io/DS6030/data/&amp;#39; # data directory library(R6030) # functions for DS-6030 library(tidyverse) # functions for data manipulation library(FNN) </description>
+      <guid>https://wejarrard.github.io/my_blog/post/2022-06-29-handwritten-text-and-digit-classification-on-rwandan-perioperative-flowsheets/</guid>
+      <description>Summary The African Surgical Outcomes Study, a seven-day, prospective, observational cohort study across 25 countries in Africa reported a rate of serious postoperative complications of 18% and mortality of 2% [1]. 95% of these deaths occurred in the postoperative period and were considered preventable. There are many factors that contribute to postoperative outcomes, but a key approach to decreasing complications is the ability to predict patient outcome trajectories from perioperative parameters [2].</description>
+    </item>
+    
+    <item>
+      <title>User Interface Informing Medical Staff on Continuous Indoor Environmental Quality</title>
+      <link>https://wejarrard.github.io/my_blog/post/2022-06-29-user-interface-informing-medical-staff-on-continuous-indoor-environmental-quality/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      <author>wej5ar@virginia.edu (Will Jarrard)</author>
+      <guid>https://wejarrard.github.io/my_blog/post/2022-06-29-user-interface-informing-medical-staff-on-continuous-indoor-environmental-quality/</guid>
+      <description>Summary This project seeks to investigate the under addressed issue of indoor environmental quality (IEQ) and the impacts these factors can have on human health. The recent COVID-19 pandemic has once again brought to the forefront the importance of maintaining a healthy indoor environment. Specifically, the improvement of indoor air flow has shown to reduce the risk of airborne virus exposure. This is extremely important in the context of hospitals, which contain high concentrations of atrisk individuals.</description>
+    </item>
+    
+    <item>
+      <title>UTX condensation underlies its tumour suppressive activity</title>
+      <link>https://wejarrard.github.io/my_blog/post/2022-06-29-utx-condensation-underlies-its-tumour-suppressive-activity/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      <author>wej5ar@virginia.edu (Will Jarrard)</author>
+      <guid>https://wejarrard.github.io/my_blog/post/2022-06-29-utx-condensation-underlies-its-tumour-suppressive-activity/</guid>
+      <description>Summary UTX (also known as KDM6A) encodes a histone H3K27 demethylase and is an important tumour suppressor that is frequently mutated in human cancers1. However, as the demethylase activity of UTX is often dispensable for mediating tumour suppression and developmental regulation2,3,4,5,6,7,8, the underlying molecular activity of UTX remains unknown. Here we show that phase separation of UTX underlies its chromatin-regulatory activity in tumour suppression. A core intrinsically disordered region (cIDR) of UTX forms phase-separated liquid condensates, and cIDR loss caused by the most frequent cancer mutation of UTX is mainly responsible for abolishing tumour suppression.</description>
     </item>
     
     <item>
@@ -63,7 +92,7 @@ Clothes Recommendation System Using Collaborative Filtering Created a recommenda
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>wej5ar@virginia.edu (Will Jarrard)</author>
       <guid>https://wejarrard.github.io/my_blog/page/rprojects/</guid>
-      <description>Deep Learning </description>
+      <description>A Dive into Resampling A look at the power of bootstrapping and K-fold cross validation.</description>
     </item>
     
   </channel>

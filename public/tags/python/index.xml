@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Will Jarrard</title>
+    <link>https://wejarrard.github.io/my_blog/tags/python/</link>
+    <description>Recent content in python on Will Jarrard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>wej5ar@virginia.edu (Will Jarrard)</managingEditor>
+    <webMaster>wej5ar@virginia.edu (Will Jarrard)</webMaster>
+    <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wejarrard.github.io/my_blog/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>
+Clothes Recommendation System Using Collaborative Filtering</title>
+      <link>https://wejarrard.github.io/my_blog/post/2022-06-29-clothes-recommendation-system-using-collaborative-filtering/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      <author>wej5ar@virginia.edu (Will Jarrard)</author>
+      <guid>https://wejarrard.github.io/my_blog/post/2022-06-29-clothes-recommendation-system-using-collaborative-filtering/</guid>
+      <description>Code can be found here.
+Abstract Businesses and retailers are constantly faced with the challenge of predicting their customers’ buying behavior. As the realm of machine learning progresses, retailers can predict consumer behavior via recommendation algorithms. Both stakeholders, customers and businesses, benefit from a better prediction algorithm as customers are recommended more of their likes and businesses increase their profit margins. Using an ALS Implicit model, we achieved a mean average precision (MAP) of 0.</description>
+    </item>
+    
+    <item>
+      <title>Classifying Songs with NLP</title>
+      <link>https://wejarrard.github.io/my_blog/post/2022-06-29-classifying-songs-with-nlp/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      <author>wej5ar@virginia.edu (Will Jarrard)</author>
+      <guid>https://wejarrard.github.io/my_blog/post/2022-06-29-classifying-songs-with-nlp/</guid>
+      <description>Github and code can be found here.
+Problem Statement Music genres organize music into collections by indicating similarities between different songs. Many music streaming services such as Spotify have high incentives to automate the classification process since they have an estimated 60,000 new songs uploaded onto their site daily. Currently, many music streaming services leverage metadata such as acoustics and emotional tone for genre classification because audio files are more useful than lyrics in terms of classifying a song, due to the high dimensionality of the audio files and low dimensionality of the lyrics.</description>
+    </item>
+    
+  </channel>
+</rss>

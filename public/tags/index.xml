@@ -6,6 +6,61 @@
     <description>Recent content in Tags on Will Jarrard</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>wej5ar@virginia.edu (Will Jarrard)</managingEditor>
-    <webMaster>wej5ar@virginia.edu (Will Jarrard)</webMaster><atom:link href="https://wejarrard.github.io/my_blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <webMaster>wej5ar@virginia.edu (Will Jarrard)</webMaster>
+    <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wejarrard.github.io/my_blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pyspark</title>
+      <link>https://wejarrard.github.io/my_blog/tags/pyspark/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      <author>wej5ar@virginia.edu (Will Jarrard)</author>
+      <guid>https://wejarrard.github.io/my_blog/tags/pyspark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://wejarrard.github.io/my_blog/tags/python/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      <author>wej5ar@virginia.edu (Will Jarrard)</author>
+      <guid>https://wejarrard.github.io/my_blog/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>r</title>
+      <link>https://wejarrard.github.io/my_blog/tags/r/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      <author>wej5ar@virginia.edu (Will Jarrard)</author>
+      <guid>https://wejarrard.github.io/my_blog/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scikit-learn</title>
+      <link>https://wejarrard.github.io/my_blog/tags/scikit-learn/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      <author>wej5ar@virginia.edu (Will Jarrard)</author>
+      <guid>https://wejarrard.github.io/my_blog/tags/scikit-learn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tensorflow</title>
+      <link>https://wejarrard.github.io/my_blog/tags/tensorflow/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      <author>wej5ar@virginia.edu (Will Jarrard)</author>
+      <guid>https://wejarrard.github.io/my_blog/tags/tensorflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tidyverse</title>
+      <link>https://wejarrard.github.io/my_blog/tags/tidyverse/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      <author>wej5ar@virginia.edu (Will Jarrard)</author>
+      <guid>https://wejarrard.github.io/my_blog/tags/tidyverse/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
