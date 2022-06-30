@@ -16,7 +16,7 @@ jobs:
       - name: Install rmarkdown and blogdown
         run: Rscript -e 'install.packages(c("rmarkdown","blogdown"))'
       - name: Install Hugo
-        run: Rscript -e 'blogdown::install_hugo(extended = TRUE, version = "0.68.3")'
+        run: Rscript -e 'blogdown::install_hugo(extended = TRUE, version = "0.101.0")'
       - name: Get themes
         run: git submodule update --remote
       - name: Look at files
