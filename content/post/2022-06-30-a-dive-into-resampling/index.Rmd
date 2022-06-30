@@ -1,7 +1,7 @@
 ---
 title: A Dive into Resampling
 author: Will Jarrard
-date: '2022-06-29'
+date: '2022-06-30'
 slug: []
 categories: []
 tags: [r, tidyverse]
@@ -9,6 +9,7 @@ type: ''
 subtitle: ''
 image: ''
 ---
+
 
 # Required R packages and Directories
 
@@ -288,4 +289,3 @@ bind_rows(cv = results,
 ```
 
 Not Bad! Although we selected the “wrong” tuning parameter, we still would have had very good performance - almost as good as using the optimal value of k according to the mse. We could do repeated holdout to make it even better
-

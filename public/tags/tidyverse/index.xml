@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tidyverse on Will Jarrard</title>
-    <link>https://chimerical-piroshki-64f694.netlify.app/tags/tidyverse/</link>
+    <link>https://willjarrard.netlify.app/tags/tidyverse/</link>
     <description>Recent content in tidyverse on Will Jarrard</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>wej5ar@virginia.edu (Will Jarrard)</managingEditor>
     <webMaster>wej5ar@virginia.edu (Will Jarrard)</webMaster>
-    <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chimerical-piroshki-64f694.netlify.app/tags/tidyverse/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://willjarrard.netlify.app/tags/tidyverse/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Dive into Resampling</title>
-      <link>https://chimerical-piroshki-64f694.netlify.app/post/2022-06-29-resampling/</link>
+      <link>https://willjarrard.netlify.app/post/2022-06-29-resampling/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       <author>wej5ar@virginia.edu (Will Jarrard)</author>
-      <guid>https://chimerical-piroshki-64f694.netlify.app/post/2022-06-29-resampling/</guid>
+      <guid>https://willjarrard.netlify.app/post/2022-06-29-resampling/</guid>
       <description>Required R packages and Directories library(tidyverse) # functions for data manipulation library(FNN) The Poor mans bayesian posterior (Bootstrapping) Ive always found it cool how bootstrapping can estimate a bayesian posterior solution without any priors. Bootstrap resampling can be used to quantify the uncertainty in a fitted curve. Below we see the power of bootstrapping.
 First, lets create a set of functions to generate data from the following distributions:
 #-- Simulation functions sim_x &amp;lt;- function(n) runif(n, 0, 2) # U[0,2] f &amp;lt;- function(x) 1 + 2*x + 5*sin(5*x) # true mean function sim_y &amp;lt;- function(x){ # generate Y|X from N{f(x),sd} n = length(x) f(x) + rnorm(n, sd=2.</description>
