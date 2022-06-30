@@ -1,0 +1,26 @@
+{
+    "id": "6C2300A4",
+    "path": "~/projects/my_blog/config.yaml",
+    "project_path": "config.yaml",
+    "type": "yaml",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1656530242558.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "77,12",
+        "scrollLine": "64"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1656556722,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1656556722781,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,291 @@
+---
+title: A Dive into Resampling
+author: Will Jarrard
+date: '2022-06-29'
+slug: []
+categories: []
+tags: [r, tidyverse]
+type: ''
+subtitle: ''
+image: ''
+---
+
+# Required R packages and Directories
+
+
+```{r packages, message=FALSE, warning=FALSE}
+library(tidyverse) # functions for data manipulation
+library(FNN)
+```
+
+
+# The Poor mans bayesian posterior (Bootstrapping)
+
+Ive always found it cool how bootstrapping can estimate a bayesian posterior solution without any priors. Bootstrap resampling can be used to quantify the uncertainty in a fitted curve. Below we see the power of bootstrapping.
+
+
+First, lets create a set of functions to generate data from the following distributions:
+
+```{r}
+#-- Simulation functions
+sim_x <- function(n) runif(n, 0, 2)     # U[0,2]
+f <- function(x) 1 + 2*x + 5*sin(5*x)   # true mean function
+sim_y <- function(x){                   # generate Y|X from N{f(x),sd}
+  n = length(x)
+  f(x) + rnorm(n, sd=2.5)
+}
+```
+
+
+
+lets start by simulating $n=100$ realizations from these distributions.
+
+
+```{r}
+#-- Generate Data
+n = 100                                 # number of observations
+set.seed(211)                           # set seed for reproducibility
+x = sim_x(n)                            # get x values
+y = sim_y(x)                            # get y values
+data = tibble(x, y)
+
+#-- Plot: ggplot
+ggplot(data, aes(x,y)) +
+  geom_point() +
+  geom_function(fun=f, color="blue") +
+  scale_x_continuous(breaks=seq(0, 2, by=.20))
+```
+
+
+
+
+Now, lets fit a 5th degree polynomial and draw the *estimated* regression curve.
+
+
+```{r}
+#-- Fit 5th degree polynomial
+fit = lm(y~poly(x, degree=5), data=data)
+
+#-- Make predictions
+poly_data = tibble(x = seq(0, 2, length=100)) %>% # evaluation points
+  mutate(yhat = predict(fit, .))                  # predictions
+
+#-- Plot: ggplot
+ggplot(data, aes(x, y)) +
+  geom_point() +
+  geom_smooth(method="lm", formula = "y~poly(x, degree=5)")
+```
+
+
+
+Now I am going to draw 200 bootstrap samples, fit a 5th degree polynomial to each bootstrap sample, and make predictions
+
+
+```{r}
+eval.pts = seq(0, 2, length=100)
+
+#-- Function that returns predictions at eval.pts
+fit_poly <- function(data, eval.pts) {
+  fit = lm(y ~ poly(x, degree = 5), data=data)
+  predict(fit, tibble(x=eval.pts))  # return predictions at eval.pts
+}
+
+#-- Run bootstrap: with loop
+R = 200   # number of bootstrap samples
+preds = matrix(NA, length(eval.pts), R)
+set.seed(212)
+for(j in 1:R){
+  ind.boot = sample.int(n, replace=TRUE)
+  preds[, j] = fit_poly(data[ind.boot,], eval.pts=eval.pts)
+}
+
+# add the eval.points and convert to long format to facilitate plotting
+boot_data = preds %>%
+  as_tibble() %>%          # convert to tibble
+  mutate(x=eval.pts) %>%   # add column with eval. points
+  pivot_longer(-x, names_to="iter", values_to="y") # convert to long format
+
+#-- Plots: ggplot2
+boot_data %>%
+  ggplot(aes(x, y)) +
+  geom_point(data=data) +
+  geom_line(aes(group=iter), alpha=.1)
+
+```
+
+
+
+
+lets figure out the 95% confidence intervals from the bootstrap samples.
+
+
+
+```{r}
+CI = boot_data %>%
+  group_by(x) %>%
+  summarize(lower = quantile(y, probs=.025),
+            upper = quantile(y, probs=.975))
+
+#-- Plot: ggplot2
+ggplot(data, aes(x, y)) +
+  geom_point() +
+  geom_line(data=poly_data, aes(y=yhat)) +
+  # geom_line(data=boot_data, aes(group=iter), alpha=.1) +
+  geom_line(data=CI, aes(y=lower), color="red", lty=2, size=1.05) +
+  geom_line(data=CI, aes(y=upper), color="red", lty=2, size=1.05) +
+  scale_x_continuous(breaks=seq(0, 2, by=.20))
+```
+
+
+
+# K-Fold cross-validation
+
+Im gonna run 10-fold cross-validation to select a K for k nearest neighbors.
+
+```{r}
+#-- Generate Data
+n = 100                                 # number of observations
+set.seed(211)                           # set seed for reproducibility
+x = sim_x(n)                            # get x values
+y = sim_y(x)                            # get y values
+data = tibble(x, y)               # make into tibble
+
+
+#- Get K-fold partition
+set.seed(221)                      # set seed for replicability
+n.folds = 10                       # number of folds for cross-validation
+fold = sample(rep(1:n.folds, length=n))  # vector of fold labels
+# notice how this is different than:  sample(1:K,n,replace=TRUE),
+#  which won't give almost equal group sizes
+
+
+#- Initialize
+K = 3:50                                # set of k values for kNN
+MSE = matrix(NA, length(K), n.folds)    # hold out of sample mse estiamtes
+n.val = numeric(n.folds)                # number of elements in validation sets
+
+#- Iterate over folds
+for(j in 1:n.folds){
+
+  #-- Set training/val data
+  val = which(fold == j)
+  train = which(fold != j)
+  n.val[j] = length(val)
+
+  #-- fit set of knn models
+  for(i in 1:length(K)){
+    k = K[i]
+    knn = FNN::knn.reg(train = data[train,'x', drop=FALSE],
+                       y = data$y[train],
+                       test = data[val,'x', drop=FALSE],
+                       k = k)
+    r.val = data$y[val]-knn$pred      # residuals on val data
+    MSE[i, j] = mean(r.val^2)
+  }
+}
+
+#-- calculate CV error and standard error
+CV = (MSE %*% n.val)/n               # Cross-validation error (MSE)
+## CV = rowMeans(MSE)       # won't be exact if n.val has different counts
+SE = apply(MSE, 1, sd)/sqrt(n.folds) # standard error
+
+#-- Optimal Solution
+results = tibble(k = K, MSE = CV[,1], SE)
+results %>%
+  filter(min_rank(MSE) == 1)
+
+#-- Plot: ggplot
+results %>%
+  mutate(optimal = ifelse(MSE == min(MSE), TRUE, FALSE)) %>%
+  ggplot(aes(K, color=optimal)) +
+  geom_point(aes(y=MSE)) +
+  geom_errorbar(aes(ymin=MSE - SE, ymax=MSE+SE)) +
+  scale_color_manual(values=c("black", "red")) +
+  scale_x_continuous(breaks=seq(0, 50, by=5))
+
+```
+
+
+
+
+Now were gonna find the optimal *edf*
+
+
+```{r}
+results = results %>% mutate(edf = (n*9/10)/k)
+results %>% filter(MSE == min(MSE))
+
+#-- Plot: ggplot
+results %>%
+  mutate(optimal = ifelse(MSE == min(MSE), TRUE, FALSE)) %>%
+  ggplot(aes(edf, color=optimal)) +
+  geom_point(aes(y=MSE)) +
+  geom_errorbar(aes(ymin=MSE - SE, ymax=MSE+SE)) +
+  scale_color_manual(values=c("black", "red"))
+```
+
+
+kNN models are attempting to fit a local mean by averaging the responses in a neighborhood of X. There is a bias-variance trade-off here; if the neighborhood grows too big there will be high bias, but if k is reduced then the variance increases.
+
+As the size of the training data grows, the distance to the k neighbors will decrease and consequently the bias will be reduced but the variance will stay the same. This implies that the optimal k can potentially be increased (to reduce the variance) with a larger training data.
+
+This is important in our cross-validation setup because we are training with smaller training data (90% smaller in the case of 10-fold cross-validation). Thus, building a model with the full training data can potentially use a larger k.
+
+One way to adjust for this is to use the effective degrees of freedom (edf) instead of k to select the final model. Take the optimal edf from cross-validation and convert to the optimal k when using the full training data according to k∗=n/edf∗
+
+```{r}
+#-- optimal k on full training set
+results %>% filter(MSE == min(MSE)) %>%
+  mutate(k.full = n/edf,
+         k.star = round(k.full))  # round since k must be an integer
+```
+
+
+How well did our cross validation preform by simulating a ton more data from the same distribution!
+
+
+```{r}
+#-- Generate Test Data
+ntest = 50000                           # Number of test samples
+set.seed(223)                           # set *different* seed
+xtest = sim_x(ntest)                    # generate test X's
+ytest = sim_y(xtest)                    # generate test Y's
+
+#-- Data
+data.test = tibble(x=xtest, y=ytest)
+
+#-- fit set of knn models
+MSE.test = numeric(length(K))
+for(i in 1:length(K)){
+  k = K[i]
+  knn = knn.reg(data[,'x', drop=FALSE],
+                y = data$y,
+                test=data.test[,'x', drop=FALSE],
+                k=k)
+  r.test = data.test$y-knn$pred      # residuals on test data
+  MSE.test[i] = mean(r.test^2)
+}
+
+results.test = tibble(k=K, edf=n/k, MSE=MSE.test)
+filter(results.test, MSE == min(MSE))
+
+```
+
+```{r}
+#-- EDF on x-axis
+bind_rows(cv = results,
+          test = results.test, .id="error") %>%
+  ggplot(aes(edf, MSE, color=error)) +
+  geom_point() + geom_line() +
+  labs(title="MSE as function of EDF")
+
+#-- K on x-axis
+bind_rows(cv = results,
+          test = results.test, .id="error") %>%
+  ggplot(aes(k, MSE, color=error)) +
+  geom_point() + geom_line() +
+  labs(title="MSE as function of k")
+```
+
+Not Bad! Although we selected the “wrong” tuning parameter, we still would have had very good performance - almost as good as using the optimal value of k according to the mse. We could do repeated holdout to make it even better
+
