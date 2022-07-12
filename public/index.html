@@ -238,6 +238,99 @@
           
           
             <article class="post-preview">
+    <a href="https://willjarrard.netlify.app/post/2022-07-12-a-look-at-transfer-learning-in-pytorch/">
+        <h2 class="post-title">A Look at Transfer Learning in Pytorch</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on July 12, 2022
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;8&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1699&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Will Jarrard
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        Transfer Learning Using Pytorch This is a dive into the power of transfer learning and my chance to get better at working with PyTorch.
+Imports import torch import torch.nn as nn import torchvision import numpy as np from tqdm import tqdm import time import copy from torch.utils.data import Dataset, Subset, random_split, DataLoader import torchvision.transforms as transforms import torchvision.datasets as datasets import matplotlib.pyplot as plt from google.colab import drive import os from torchsummary import summary drive.
+        <a href="https://willjarrard.netlify.app/post/2022-07-12-a-look-at-transfer-learning-in-pytorch/" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://willjarrard.netlify.app/post/2022-06-30-a-dive-into-resampling/">
+        <h2 class="post-title">A Dive into Resampling</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on June 30, 2022
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1268&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Will Jarrard
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        Required R packages and Directories library(tidyverse) # functions for data manipulation library(FNN) The Poor mans bayesian posterior (Bootstrapping) Ive always found it cool how bootstrapping can estimate a bayesian posterior solution without any priors. Bootstrap resampling can be used to quantify the uncertainty in a fitted curve. Below we see the power of bootstrapping.
+First, lets create a set of functions to generate data from the following distributions:
+#-- Simulation functions sim_x &lt;- function(n) runif(n, 0, 2) # U[0,2] f &lt;- function(x) 1 + 2*x + 5*sin(5*x) # true mean function sim_y &lt;- function(x){ # generate Y|X from N{f(x),sd} n = length(x) f(x) + rnorm(n, sd=2.
+        <a href="https://willjarrard.netlify.app/post/2022-06-30-a-dive-into-resampling/" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+        <a href="https://willjarrard.netlify.app//tags/r/">r</a>&nbsp;
+        
+        <a href="https://willjarrard.netlify.app//tags/tidyverse/">tidyverse</a>&nbsp;
+        
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
     <a href="https://willjarrard.netlify.app/post/2022-06-29-clothes-recommendation-system-using-collaborative-filtering/">
         <h2 class="post-title">
 Clothes Recommendation System Using Collaborative Filtering</h2>
@@ -286,57 +379,6 @@ Abstract Businesses and retailers are constantly faced with the challenge of pre
         <a href="https://willjarrard.netlify.app//tags/python/">python</a>&nbsp;
         
         <a href="https://willjarrard.netlify.app//tags/pyspark/">pyspark</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://willjarrard.netlify.app/post/2022-06-29-resampling/">
-        <h2 class="post-title">A Dive into Resampling</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on June 29, 2022
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1268&nbsp;words
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Will Jarrard
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        Required R packages and Directories library(tidyverse) # functions for data manipulation library(FNN) The Poor mans bayesian posterior (Bootstrapping) Ive always found it cool how bootstrapping can estimate a bayesian posterior solution without any priors. Bootstrap resampling can be used to quantify the uncertainty in a fitted curve. Below we see the power of bootstrapping.
-First, lets create a set of functions to generate data from the following distributions:
-#-- Simulation functions sim_x &lt;- function(n) runif(n, 0, 2) # U[0,2] f &lt;- function(x) 1 + 2*x + 5*sin(5*x) # true mean function sim_y &lt;- function(x){ # generate Y|X from N{f(x),sd} n = length(x) f(x) + rnorm(n, sd=2.
-        <a href="https://willjarrard.netlify.app/post/2022-06-29-resampling/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://willjarrard.netlify.app//tags/r/">r</a>&nbsp;
-        
-        <a href="https://willjarrard.netlify.app//tags/tidyverse/">tidyverse</a>&nbsp;
         
     </div>
     

@@ -3,12 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://willjarrard.netlify.app/</loc>
-    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://willjarrard.netlify.app/post/2022-07-12-a-look-at-transfer-learning-in-pytorch/</loc>
+    <lastmod>2022-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://willjarrard.netlify.app/post/</loc>
+    <lastmod>2022-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://willjarrard.netlify.app/post/2022-06-30-a-dive-into-resampling/</loc>
+    <lastmod>2022-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://willjarrard.netlify.app/tags/r/</loc>
+    <lastmod>2022-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://willjarrard.netlify.app/tags/</loc>
+    <lastmod>2022-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://willjarrard.netlify.app/tags/tidyverse/</loc>
+    <lastmod>2022-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://willjarrard.netlify.app/post/2022-06-29-clothes-recommendation-system-using-collaborative-filtering/</loc>
-    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://willjarrard.netlify.app/post/2022-06-29-resampling/</loc>
     <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://willjarrard.netlify.app/post/2022-06-29-classifying-songs-with-nlp/</loc>
@@ -17,28 +32,16 @@
     <loc>https://willjarrard.netlify.app/post/2022-06-29-handwritten-text-and-digit-classification-on-rwandan-perioperative-flowsheets/</loc>
     <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://willjarrard.netlify.app/post/</loc>
-    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://willjarrard.netlify.app/tags/pyspark/</loc>
     <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://willjarrard.netlify.app/tags/python/</loc>
     <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://willjarrard.netlify.app/tags/r/</loc>
-    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://willjarrard.netlify.app/tags/scikit-learn/</loc>
     <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://willjarrard.netlify.app/tags/</loc>
-    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://willjarrard.netlify.app/tags/tensorflow/</loc>
-    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://willjarrard.netlify.app/tags/tidyverse/</loc>
     <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://willjarrard.netlify.app/post/2022-06-29-user-interface-informing-medical-staff-on-continuous-indoor-environmental-quality/</loc>
